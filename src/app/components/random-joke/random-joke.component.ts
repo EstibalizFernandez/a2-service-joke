@@ -26,5 +26,8 @@ export class RandomJokeComponent implements OnInit {
     });
   }
 
+  addJoke(joke): void {
+    this.jokeGenerator.pushAddJoke(joke);
+  }
 
 }

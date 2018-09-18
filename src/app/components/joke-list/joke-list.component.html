@@ -1,1 +1,6 @@
-<button (click)="onClickSaveJoke(joke)">Save</button>
+
+<ul>
+    <li *ngFor='let joke of getJokeList()'>
+        {{ joke.value }}
+    </li>
+</ul>

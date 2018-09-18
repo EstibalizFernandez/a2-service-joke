@@ -1,5 +1,6 @@
 import { JokeGeneratorService } from './../../services/joke-generator.service';
 import { Component, OnInit } from '@angular/core';
+import { Joke } from '../../shared/models/joke.model';
 
 @Component({
   selector: 'app-joke-list',
@@ -12,7 +13,7 @@ export class JokeListComponent implements OnInit {
   ngOnInit() {
   }
 
-  
-
-
+  getJokeList(): Array<Joke> {
+    return this.jokeGenerator.getArrayJoke();
+  }
 }
